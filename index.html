@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: skyblue;
+    font-family: 'Arial', sans-serif;
+  color:black;
+  background-color: skyblue;
+  border:5 px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(2, 5, 30, 0.8);
+}
+
+.countdown-item {
+    padding:5px;
+}
+
+@media screen and (max-width: 600px) {
+    .countdown-container {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="countdown-container">
+        <div id="days" class="countdown-item">00</div>
+        <div class="countdown-item">:</div>
+        <div id="hours" class="countdown-item">00</div>
+        <div class="countdown-item">:</div>
+        <div id="minutes" class="countdown-item">00</div>
+        <div class="countdown-item">:</div>
+        <div id="seconds" class="countdown-item">00</div>
+    </div>
+
+    <script src="countdown.js">
+    </script>
+</body>
+</html>
